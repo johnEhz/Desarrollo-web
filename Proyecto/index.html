@@ -1,39 +1,235 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <title>CaptionZ - Live</title>
 </head>
-<body>
-<nav>
-    <button>Inicio</button>
-     <button>About</button>
-     <button>Contact</button>
-</nav> 
-<section>
-    <section>
-     <img src="" alt="">
-    </section>
-    <section>
-        <h1>Texto 1</h1>
-        <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste impedit illo fugit blanditiis amet ex illum deleniti beatae? Modi, cupiditate? Tempore, placeat laborum! Corporis blanditiis nihil dolore hic adipisci minus.</p>
-    </section>
-</section>
-<section>
-    <section>
-        <img src="" alt="">
-    </section>
-    <section>
-        <img src="" alt="">
-    </section>
-    <section>
-        <img src="" alt="">
-    </section>
-</section>
-><footer>
-    
-</footer>
+
+<body class="page-wrapper">
+    <header class="page-header">
+        <ul>
+            <li>
+                <a href="/index.html" class="logo">Caption<span>Z</span><span class="version"> v1.0</span></a>
+            </li>
+            <li>
+                <input type="text" class="search-bar" placeholder="Buscar">
+            </li>
+            <nav class="account-controls">
+                <ul>
+                    <li>
+                        <a href="">Notifications</a>
+                    </li>
+                    <li>
+                        <a href="">Account</a>
+                    </li>
+                    <li>
+                        <button>
+                            LogOut
+                        </button>
+                    </li>
+                </ul>
+            </nav>
+        </ul>
+    </header>
+    <main>
+        <nav class="categorias">
+            <ul>
+                <h2 class="title">Inicio</h2>
+                <li>
+                    <a href="Home">Home</a>
+                </li>
+                <li>
+                    <a href="Videos">Videos</a>
+                </li>
+                <li>
+                    <a href="Directos">Directos</a>
+                </li>
+                <li>
+                    <a href="Shorts">Shorts</a>
+                </li>
+            </ul>
+
+            <ul>
+                <h2 class="title">Categorias</h2>
+                <li>
+                    <a href="Música">Música</a>
+                </li>
+                <li>
+                    <a href="Academico">Academico</a>
+                </li>
+                <li>
+                    <a href="VideoJuegos">VideoJuegos</a>
+                </li>
+                <li>
+                    <a href="Películas">Películas</a>
+                </li>
+                <li>
+                    <a href="Series">Series</a>
+                </li>
+                <li>
+                    <a href="Documentales">Documentales</a>
+                </li>
+            </ul>
+
+            <ul>
+                <h2 class="title">Acerca de</h2>
+                <li>
+                    <a href="Ayuda">Ayuda</a>
+                </li>
+                <li>
+                    <a href="Servicio">Servicio</a>
+                </li>
+                <li>
+                    <a href="Terminos">Terminos</a>
+                </li>
+                <li>
+                    <a href="Version">Version</a>
+                </li>
+            </ul>
+        </nav>
+        <section class="video-wrapper">
+            <video src="./assets/oceano.mp4" loop controls autoplay></video>
+            <article class="video-information">
+                <span>
+                    <h2 class="video-channel">Flávia Sunitha</h2>
+                    <h3 class="video-title">Oceano Video</h2>
+                </span>
+                <span>
+                    <h2 class="video-viewers">2,948 Viewers</h2>
+                    <h3 class="video-category">Documentales</h2>
+                    <ul class="video-follow">
+                        <li>
+                            <button>Follow</button>
+                        </li>
+                        <li>
+                            <button>Like</button>
+                        </li>
+                    </ul>
+                </span>
+            </article>
+        </section>
+        <nav class="channels">
+            <h2 class="title">
+                Canales <span class="live">10 Online</span>
+            </h2>
+            <ul>
+                <li>
+                    <article class="channel-card">
+                        <header>
+                            Flávia Sunitha
+                        </header>
+                        <footer>
+                            <p>Academico</p>
+                            <span>2,948</span>
+                        </footer>
+                    </article>
+                </li>
+                <li>
+                    <article class="channel-card">
+                        <header>
+                            Samira Amalaswinþa
+                        </header>
+                        <footer>
+                            <p>Música</p>
+                            <span>4,565</span>
+                        </footer>
+                    </article>
+                </li>
+                <li>
+                    <article class="channel-card">
+                        <header>
+                            Philibert Jeruti
+                        </header>
+                        <footer>
+                            <p>Música</p>
+                            <span>7,443</span>
+                        </footer>
+                    </article>
+                </li>
+                <li>
+                    <article class="channel-card">
+                        <header>
+                            Yaraslau Susana
+                        </header>
+                        <footer>
+                            <p>Documentales</p>
+                            <span>3,440</span>
+                        </footer>
+                    </article>
+                </li>
+                <li>
+                    <article class="channel-card">
+                        <header>
+                            Jasmina Sunita
+                        </header>
+                        <footer>
+                            <p>VideoJuegos</p>
+                            <span>10,023</span>
+                        </footer>
+                    </article>
+                </li>
+                <li>
+                    <article class="channel-card">
+                        <header>
+                            Pòl Arun
+                        </header>
+                        <footer>
+                            <p>Series</p>
+                            <span>34,990</span>
+                        </footer>
+                    </article>
+                </li>
+                <li>
+                    <article class="channel-card">
+                        <header>
+                            Solomon Ramūnas
+                        </header>
+                        <footer>
+                            <p>Películas</p>
+                            <span>1000</span>
+                        </footer>
+                    </article>
+                </li>
+                <li>
+                    <article class="channel-card">
+                        <header>
+                            Agapetos Jaren
+                        </header>
+                        <footer>
+                            <p>Películas</p>
+                            <span>4,042</span>
+                        </footer>
+                    </article>
+                </li>
+                <li>
+                    <article class="channel-card">
+                        <header>
+                            Swapnil Tawnya
+                        </header>
+                        <footer>
+                            <p>Academico</p>
+                            <span>2,340</span>
+                        </footer>
+                    </article>
+                </li>
+                <li>
+                    <article class="channel-card">
+                        <header>
+                            Saulius Mikael
+                        </header>
+                        <footer>
+                            <p>Música</p>
+                            <span>1,000</span>
+                        </footer>
+                    </article>
+                </li>
+            </ul>
+        </nav>
+    </main>
 </body>
+
 </html>

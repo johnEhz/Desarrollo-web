@@ -1,0 +1,277 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+
+ul {
+    list-style: none;
+}
+
+.logo {
+    font-weight: 800;
+    font-size: 1.2rem;
+    font-style: italic;
+}
+
+.logo span {
+    color: #6e69a1;
+    font-style: italic;
+    font-weight: 700;
+}
+
+.logo .version {
+    color: white;
+    font-size: small;
+}
+
+.page-header {
+    background-color: #18181B;
+    height: 3.5rem;
+    display: flex;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+    border-bottom:1px solid rgb(48, 48, 48);
+    justify-content: center;
+}
+
+.page-header ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    max-width: 1450px;
+    width: 100%;
+}
+
+.search-bar {
+    width: 17rem;
+    height: 1.7rem;
+    background-color: #474749;
+    border: none;
+    padding: 2px 15px;
+    border-radius: 5px;
+    outline: none;
+    font-size: 0.9rem;
+    color: #ffffff;
+}
+
+input::placeholder {
+    color: rgb(224, 224, 224);
+    font-weight: 400;
+}
+
+.account-controls ul {
+    padding: 0px;
+    display: flex;
+    flex-direction: row;
+    gap: 1.6rem;
+}
+
+.account-controls button {
+    background-color: rgb(255, 77, 77);
+    border: none;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-weight: 200;
+    cursor: pointer;
+}
+
+.account-controls button:hover {
+    background-color: rgb(182, 0, 0);
+}
+
+.account-controls a {
+    color:rgb(214, 214, 214);
+    font-size: 0.9rem;
+    font-weight: 300;
+}
+
+.account-controls a:hover {
+    color:white;
+    font-size: 0.9rem;
+    font-weight: 300;
+}
+
+main {
+    background-color: red;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 3.5rem
+}
+
+main .categorias{
+    width: 13rem;
+    height: 100%;
+    background-color: #1d1d22;
+    overflow-y: auto;
+    display: flex;
+    position: fixed;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.title {
+    color: #ffffff;
+    font-weight: 500;
+    padding-bottom: 10px;
+    padding-left: 15px;
+}
+
+.title .live {
+    font-size: small;
+    font-weight: 300;
+    color: rgb(255, 86, 86);
+    border-bottom: 1px solid;
+    font-style: italic;
+}
+
+main .categorias ul {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid #2D2B43;
+    padding: 15px 0px;
+}
+
+main .categorias ul li a {
+    color: #d5d5d5;
+    display: block;
+    padding: 8px 20px;
+    font-weight: 300;
+    transition: background-color 0.2s ease;
+}
+
+main .categorias ul li a:hover {
+    background-color: #303037;
+}
+
+.video-wrapper {
+    width: 100%;
+    height: 100%;
+    background-color: #18181B;
+    padding: 0px 16rem 0px 13rem;
+}
+
+.channels {
+    position: fixed;
+    overflow-y: auto;
+    background-color: #1d1d22;
+    width: 16rem;
+    height: 100%;
+    right: 0;
+    padding: 15px 0px;
+}
+
+.channels ul {
+    display: flex;
+    flex-direction: column;
+}
+
+.channels ul li {
+    border: 1px solid #2a2a31;
+}
+
+.channel-card {
+    display: flex;
+    flex-direction: column;
+    padding: 5px 15px;
+    gap: 4px;
+    transition: background-color 0.05s ease;
+}
+
+.channel-card:hover {
+    background-color: #2a2a31;
+    cursor: pointer;
+}
+
+.channel-card footer {
+    display: flex;
+    font-weight: 100;
+    font-size: 14px;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.channel-card footer p {
+    font-style: italic;
+    color: #bcbcbc;
+}
+
+.channel-card footer span {
+    color: rgb(255, 86, 86);
+    font-size: 14px;
+}
+
+.video-wrapper video {
+    width: 100%;
+    height: auto;
+    background-color: black;
+}
+
+.video-information {
+    padding: 25px 20px;
+    max-width: 100%;
+    background-color: #18181B;
+    border-left:1px solid #2a2a31;
+    border-right:1px solid #2a2a31;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.video-title {
+    font-weight: 300;
+    font-style: italic;
+}
+
+.video-viewers {
+    color: rgb(255, 86, 86);
+    font-weight: 300;
+    font-size: 17px;
+    font-style: italic;
+    text-align: end;
+}
+
+.video-category {
+    font-weight: 200;
+    color:#a5a5a5;
+    font-style: italic;
+}
+
+.video-follow {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 10px;
+    gap: 7px;
+}
+
+.video-follow li {
+    width: 100%;
+    
+}
+
+.video-follow li button{
+    width: 100%;
+    padding: 3px 5px;
+    background-color: #2D2B43;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.05s ease;
+}
+
+.video-follow li button:hover{
+    background-color: #403d60;
+}
+
