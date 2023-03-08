@@ -103,4 +103,73 @@ removeData(data)
 removeData(data)
 console.log(data)
 
-h3
+//CLASE 08/03/2023
+
+let sumPlus5 = num => {
+    return num + 5
+}
+let f = sumPlus5
+
+console.log(sumPlus5(5))
+console.log(f(5))
+
+/** Callback functions
+ * Enviar función como parametro de otra función
+*/
+
+const esPar = num => {
+    return num % 2 == 0
+}
+
+const validationPar = (n, callback) => {
+    const par = callback(n)
+    console.log(`El numero es ${par ? 'PAR' : 'IMPAR'}`)
+}
+
+validationPar(2, esPar)
+
+
+/**Metodos arrays */
+const myArray = [1, 2, 3, 4, 5, 10, 30]
+let myArrayLet = [1, 2, 3, 4, 5, 10, 30]
+
+//.reduce
+const sumValues = myArray.reduce((acumulador, currentValue) => {
+    return acumulador += currentValue
+})
+
+const avgValues = myArray.reduce((acumulador, currentValue) => {
+    console.log(`Acumulator: ${acumulador}, Current: ${currentValue}`)
+    return acumulador += currentValue
+})
+
+console.log(sumValues)
+console.log(avgValues)
+
+//.forEach()
+console.log('ForEach')
+const fnForEach = myArray.forEach(n => {
+    console.log(n)
+})
+
+//.filter()
+console.log('Filter')
+const fnFilter = myArray.filter(n => n > 5)
+console.log(fnFilter)
+
+//.find()
+console.log('Find')
+const fnFind = myArray.find(n => n > 20)
+console.log(fnFind)
+
+
+const personas = ['Juan', 'Perez', 'Pedro', 'Andres', 'Rosa']
+//.map()
+console.log('Map')
+const fnMap = personas.map(person => {
+    return `Miembro ${person.toUpperCase()} se ha unido al grupo!`
+})
+
+console.log(fnMap)
+
+console.log(myArray)
