@@ -65,8 +65,42 @@ console.log(trabajador.saludar())
 // ---------------------------------------------------------------------------------
 
 const vehiculo = {
+    placa: 'FDT353',
     tipo: 'Wagon',
-    color: 'Gris',
-    cv: 200,
-    
+    caracteristicas: {
+        color: 'gris',
+        cv: 200,
+        pasajeros: 5,
+        altura: 1.90,
+        anchura: 2.10,
+        largo: 4.3
+    },
+    acelerar: function() {
+        return `${this.tipo} Acelerando`
+    }
 }
+
+class Vehiculo {
+    constructor({ tipo, color, matricula, cv }) {
+        this.tipo = tipo
+        this.color = color
+        this.matricula = matricula
+        this.cv = cv
+        this.velocidad = 0 //km/h
+    }
+
+    acelerar() {
+        this.velocidad += 10
+        return `${this.tipo} Acelerando!!`
+    }
+
+    frenar() {
+        this.velocidad -= 5
+        return `${this.tipo} Frenando!!`
+    }
+}
+
+
+console.log(vehiculo)
+const automovil = new Vehiculo({ tipo:'Automovil', color:'Gris', matricula:'FTG231', cv:100 })
+console.log(automovil)
