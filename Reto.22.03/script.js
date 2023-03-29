@@ -70,7 +70,6 @@ const OperarVehiculos = ({ Object, Vehicle }) => {
     console.log('Operando Objeto Vehículo')
     console.log(Object.acelerar())
     console.log(Object.acelerar())
-    console.log(Object.frenar())
     console.log(Object.caracteristicas)
     console.log('')
     console.log('Operando clase Camion')
@@ -79,4 +78,4 @@ const OperarVehiculos = ({ Object, Vehicle }) => {
     console.log(Vehicle.frenar())
 }
 
-OperarVehiculos({ firstObject:vehiculo, classVehicle:camion })
+OperarVehiculos({ Object:vehiculo, Vehicle:camion })
