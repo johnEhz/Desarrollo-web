@@ -42,22 +42,41 @@ class Vehiculo {
     }
 }
 
+class Camion extends Vehiculo {
+    constructor({ tipo, color, matricula, cv, placa='Sin placa', carga, tipoCarga }) {
+        super({ tipo, color, matricula, cv, placa:'Sin placa' })
+        this.carga = carga
+        this.tipoCarga = tipoCarga
+    }
+}
+
 const automovil = new Vehiculo({ tipo:'Automovil', color:'Gris', matricula:'FTG231', cv:100 })
 console.log(automovil)
 console.log(`Velocidad: ${automovil.velocidad}`)
 console.log(automovil.acelerar())
 console.log(automovil.acelerar())
-console.log(automovil.acelerar())
-console.log(automovil.acelerar())
 console.log(automovil.frenar())
 console.log(automovil.frenar())
-console.log(automovil.frenar())
+
+const camion = new Camion({  tipo:'Camion', color:'Rojo', matricula:'GTFASF', cv:300, carga:5000, tipoCarga:'Heno' })
+console.log(camion)
+console.log(`Velocidad: ${camion.velocidad}`)
+console.log(camion.acelerar())
+console.log(camion.acelerar())
 
 
 //PUNTO 3
-const getObjectsInformation = ({ firstObject, classVehicle }) => {
-    console.log(firstObject)
-    console.log(classVehicle)
+const OperarVehiculos = ({ Object, Vehicle }) => {
+    console.log('Operando Objeto Vehículo')
+    console.log(Object.acelerar())
+    console.log(Object.acelerar())
+    console.log(Object.frenar())
+    console.log(Object.caracteristicas)
+    console.log('')
+    console.log('Operando clase Camion')
+    console.log(Vehicle.acelerar())
+    console.log(Vehicle.acelerar())
+    console.log(Vehicle.frenar())
 }
 
-getObjectsInformation({ firstObject:vehiculo, classVehicle:automovil })
+OperarVehiculos({ firstObject:vehiculo, classVehicle:camion })
